@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name AndroidkeyboardBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "con.familydollar.androidkeyboard.ExampleProxy.h"
+#include "con.familydollar.androidkeyboard.AndroidkeyboardModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+con.familydollar.androidkeyboard.ExampleProxy, ::con::familydollar::androidkeyboard::androidkeyboard::ExampleProxy::bindProxy, ::con::familydollar::androidkeyboard::androidkeyboard::ExampleProxy::dispose
+con.familydollar.androidkeyboard.AndroidkeyboardModule, ::con::familydollar::androidkeyboard::AndroidkeyboardModule::bindProxy, ::con::familydollar::androidkeyboard::AndroidkeyboardModule::dispose
+%%
